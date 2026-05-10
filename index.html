@@ -1,0 +1,848 @@
+<html lang="en"><head></head><body class="antialiased overflow-x-hidden selection:bg-brand-green selection:text-white relative">```html
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>His Grace Orphans Ministry</title>
+<!-- Google Fonts: Montserrat -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              bg: '#f7fbf1',
+              green: '#1a5d4e',
+              greenHover: '#13473b',
+              blue: '#0a192f',
+              text: '#1e293b',
+              accent: '#d4ed6d' // Soft yellowish-green from inspiration
+            }
+          },
+          borderRadius: {
+            '2xl': '1rem',
+            '3xl': '1.5rem',
+            '4xl': '2rem',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-utilities">
+    /* Adding a subtle texture or pattern could enhance the 'editorial' feel, but keeping it clean for now based on prompt */
+    body {
+      background-color: theme('colors.brand.bg');
+      color: theme('colors.brand.text');
+    }
+    
+    .blob-shape {
+      border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    }
+
+    /* Parallax Elements */
+    .parallax-element {
+      will-change: transform;
+      transition: transform 0.1s ease-out;
+    }
+
+    /* Background Pattern */
+    .bg-dot-pattern {
+      background-image: radial-gradient(rgba(26, 93, 78, 0.1) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  </style>
+<!-- Background Decorative Swirl Top Right -->
+<svg class="absolute top-32 -right-20 w-64 h-64 text-brand-accent opacity-20 pointer-events-none z-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 200 200">
+<path d="M10 190 C 10 10, 190 10, 190 100 C 190 190, 50 190, 50 100 C 50 50, 150 50, 150 100 C 150 150, 80 150, 80 100"></path>
+</svg>
+<!-- BEGIN: MainHeader -->
+<header class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md border-b border-white/20 shadow-sm transition-all duration-300">
+<div class="container mx-auto px-6 py-3 flex justify-between items-center">
+<!-- Logo -->
+<a class="flex items-center gap-2 group" href="#">
+    <img alt="His Grace Orphanage Ministry Logo" class="h-12 w-auto object-contain transition-transform group-hover:scale-105" src="assets/images/cropped-HIS-GRACE-Log-PNG-1.pngj_-1-270x270.png"/>
+</a>
+
+<!-- Desktop Navigation -->
+<nav class="hidden lg:flex items-center gap-8 font-semibold text-[13px] uppercase tracking-wider">
+    <a class="text-brand-green border-b-2 border-brand-green pb-1" href="#">Home</a>
+    
+    <!-- About Dropdown -->
+    <div class="relative group">
+        <button class="flex items-center gap-1 hover:text-brand-green transition-colors pb-1">About <span class="material-symbols-outlined text-[16px]">expand_more</span></button>
+        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-100 shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
+            <a class="block px-4 py-2 text-gray-600 hover:bg-brand-accent/20 hover:text-brand-green transition-colors text-xs" href="#">About Us</a>
+            <a class="block px-4 py-2 text-gray-600 hover:bg-brand-accent/20 hover:text-brand-green transition-colors text-xs" href="#">Why Giving</a>
+        </div>
+    </div>
+
+    <a class="hover:text-brand-green transition-colors pb-1" href="#">Ministry</a>
+
+    <!-- Projects Dropdown -->
+    <div class="relative group">
+        <button class="flex items-center gap-1 hover:text-brand-green transition-colors pb-1">Projects <span class="material-symbols-outlined text-[16px]">expand_more</span></button>
+        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-100 shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
+            <a class="block px-4 py-2 text-gray-600 hover:bg-brand-accent/20 hover:text-brand-green transition-colors text-xs" href="#">Ongoing</a>
+            <a class="block px-4 py-2 text-gray-600 hover:bg-brand-accent/20 hover:text-brand-green transition-colors text-xs" href="#">Completed</a>
+        </div>
+    </div>
+
+    <a class="hover:text-brand-green transition-colors pb-1" href="#">News</a>
+
+    <!-- Community Dropdown -->
+    <div class="relative group">
+        <button class="flex items-center gap-1 hover:text-brand-green transition-colors pb-1">Community <span class="material-symbols-outlined text-[16px]">expand_more</span></button>
+        <div class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-100 shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
+            <a class="block px-4 py-2 text-gray-600 hover:bg-brand-accent/20 hover:text-brand-green transition-colors text-xs" href="#">Our Team</a>
+            <a class="block px-4 py-2 text-gray-600 hover:bg-brand-accent/20 hover:text-brand-green transition-colors text-xs" href="#">Partners</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Actions -->
+<div class="flex items-center gap-4">
+    <a class="hidden md:block text-gray-500 hover:text-brand-green font-semibold text-xs uppercase tracking-widest" href="#">Contact</a>
+    <a class="bg-brand-green hover:bg-brand-greenHover text-white px-5 py-2 rounded-full text-xs font-bold transition-all shadow-md hover:shadow-lg flex items-center gap-2 uppercase tracking-tighter" href="#">Donate Now</a>
+    
+    <!-- Mobile Menu Toggle -->
+    <button class="lg:hidden text-brand-blue">
+        <span class="material-symbols-outlined">menu</span>
+    </button>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main class="pt-[88px]">
+<!-- BEGIN: HeroSection -->
+<section class="container mx-auto px-6 pt-6 md:pt-10 pb-12 md:pb-20 flex flex-col items-center relative bg-dot-pattern">
+<!-- Decorative Hand-drawn Heart Outline -->
+<div class="absolute top-10 left-10 text-pink-400 opacity-60 hidden lg:block rotate-12 parallax-element" data-speed="0.2">
+<svg class="w-20 h-20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+<path d="M20.5 4.2c-2.2-2-5.5-2-7.5.2L12 5.2l-1-1c-2-2-5.3-2-7.5-.2s-2 5.5-.2 7.5l1 1L12 20.2l7.7-7.7 1-1c1.8-2 1.8-5.3-.2-7.3z" opacity="0.5"></path>
+</svg>
+</div>
+<!-- Decorative Scribble Right -->
+<div class="absolute top-40 right-20 text-brand-green opacity-30 hidden lg:block -rotate-12 parallax-element" data-speed="0.4">
+<svg class="w-16 h-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 50 50">
+<path d="M10,40 Q30,10 40,30 T20,20"></path>
+</svg>
+</div>
+<!-- New: Floating Star Left -->
+<div class="absolute top-2/3 left-[5%] text-brand-accent opacity-40 hidden lg:block rotate-45 parallax-element" data-speed="0.15">
+<svg class="w-12 h-12" fill="currentColor" viewbox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+</div>
+<!-- New: Floating Circle Right -->
+<div class="absolute top-1/4 right-[10%] text-brand-green opacity-20 hidden lg:block parallax-element" data-speed="0.3">
+<svg class="w-24 h-24" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 100 100"><circle cx="50" cy="50" r="40" stroke-dasharray="10 5"/></svg>
+</div>
+<!-- Hero Content -->
+<div class="max-w-4xl text-center relative z-10 px-8 pt-12 pb-20 mb-8">
+    <!-- Organic Hand-drawn Frame -->
+    <div class="absolute inset-0 z-0 pointer-events-none">
+        <svg class="w-full h-full text-brand-green/30" viewBox="0 0 600 400" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Taller and more inclusive frame path -->
+            <path d="M40,50 C150,15 450,15 560,50 C610,150 610,250 560,350 C450,390 150,390 40,350 C-10,250 -10,150 40,50" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="10 6" />
+        </svg>
+    </div>
+    
+    <div class="relative z-10">
+        <div class="inline-flex items-center gap-2 text-brand-green font-semibold tracking-wider text-sm uppercase mb-4">
+            <svg class="w-4 h-4 text-red-500" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"></path>
+            </svg>
+            Providing Hope
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold text-brand-blue leading-tight mb-6">
+          Every child deserves a 
+          <span class="relative inline-block px-2">
+            <span class="relative z-10 text-brand-green italic">loving home</span>
+            <!-- Hand-drawn highlighter marker -->
+            <svg class="absolute inset-0 w-full h-full text-brand-accent/30 -rotate-1 z-0 transform scale-110" preserveAspectRatio="none" viewBox="0 0 100 100" fill="currentColor">
+                <path d="M5,40 Q20,35 95,45 Q90,55 10,60 Q15,45 5,40" />
+            </svg>
+          </span> 
+          and a bright future.
+        </h1>
+        <p class="text-gray-600 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+          We connect compassionate donors with orphans to provide education, healthcare, and safe shelter. Join us in making a lasting impact.
+        </p>
+        
+        <div class="flex flex-wrap justify-center gap-4">
+            <a class="bg-brand-green hover:bg-brand-greenHover text-white px-8 py-3.5 rounded-full font-semibold transition-all shadow-lg flex items-center gap-2 group" href="#">
+                Donate Now
+                <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 7l5 5m0 0l-5 5m5-5H6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+            </a>
+            <a class="bg-white hover:bg-gray-50 text-brand-blue px-8 py-3.5 rounded-full font-semibold transition-all shadow-sm border border-gray-200" href="#">See Our Impact</a>
+        </div>
+    </div>
+</div>
+
+<!-- Join Supporters (Moved outside to ensure buttons are the frame's focus) -->
+<div class="flex items-center justify-center gap-4 animate-fade-in mb-16 relative z-10">
+    <div class="flex -space-x-3">
+        <img alt="Donor" class="inline-block h-10 w-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150&h=150"/>
+        <img alt="Donor" class="inline-block h-10 w-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150"/>
+        <img alt="Donor" class="inline-block h-10 w-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150"/>
+        <div class="flex items-center justify-center h-10 w-10 rounded-full border-2 border-white bg-brand-accent text-brand-blue text-xs font-bold shadow-sm">+50</div>
+    </div>
+    <p class="text-sm font-medium text-gray-500">
+        Join <span class="text-brand-blue font-bold">5k+ supporters</span> this month.
+    </p>
+</div>
+
+<!-- Hero Image Collage (Inspired by design) -->
+<div class="w-full max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-6 items-start relative mt-8">
+<!-- Decorative Loop near images -->
+<svg class="absolute -top-12 -left-12 w-24 h-24 text-brand-accent opacity-80 hidden md:block z-0 parallax-element" data-speed="0.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 100 100">
+<path d="M80 20 C 20 20, 20 80, 50 80 C 80 80, 80 40, 50 40 C 30 40, 30 60, 50 60"></path>
+</svg>
+<!-- Column 1 -->
+<div class="flex flex-col gap-6 md:mt-12">
+<img alt="Community Support" class="w-full h-auto object-cover rounded-3xl shadow-lg relative z-10" src="assets/images/hero-new-2.jpg"/>
+<img alt="Happy child" class="w-full h-auto object-cover rounded-3xl shadow-lg relative z-10" src="assets/images/charity-25.jpg"/>
+<!-- Recent Donors Widget -->
+<div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between z-20 relative -mt-12 mx-4">
+<div>
+<p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1">Recent Donors</p>
+<div class="flex -space-x-2">
+<img alt="" class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150&h=150"/>
+<img alt="" class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150&h=150"/>
+<img alt="" class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150"/>
+<div class="h-8 w-8 rounded-full ring-2 ring-white bg-brand-green text-white flex items-center justify-center text-xs font-bold">+5k</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 2 -->
+<div class="flex flex-col gap-6 relative">
+<!-- Stat Banner -->
+<div class="bg-white py-3 px-6 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 w-max mx-auto mb-2 relative z-10">
+<div class="bg-brand-accent/20 p-2 rounded-lg text-brand-green">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div>
+<p class="text-xl font-bold text-brand-blue">5,890</p>
+<p class="text-xs text-gray-500">Children Supported</p>
+</div>
+</div>
+<img alt="Children outdoors" class="w-full h-auto object-cover rounded-3xl shadow-lg relative z-10" src="assets/images/IMG_20250414_105623_083@839147843.jpg"/>
+<img alt="Learning together" class="w-full h-auto object-cover rounded-3xl shadow-lg relative z-10" src="assets/images/hero-new-1.jpg"/>
+<!-- Decorative small star -->
+<svg class="absolute -right-6 top-1/2 w-8 h-8 text-yellow-400 opacity-80" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 2l2.4 7.6H22l-6.2 4.5 2.4 7.6-6.2-4.5-6.2 4.5 2.4-7.6L2 9.6h7.6z"></path>
+</svg>
+</div>
+<!-- Column 3 -->
+<div class="flex flex-col gap-6 md:mt-24 relative">
+<img alt="Our community" class="w-full h-auto object-cover rounded-3xl shadow-lg relative z-10" src="assets/images/IMG_20250906_172026_359@-1020151698.jpg"/>
+<!-- Decorative lines bottom right -->
+<svg class="absolute -bottom-8 -right-8 w-20 h-20 text-brand-green opacity-40 z-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 50 50">
+<path d="M10 10 L40 40 M20 10 L40 30 M10 20 L30 40"></path>
+</svg>
+<!-- Funding Progress Widget -->
+<div class="bg-white p-5 rounded-2xl shadow-lg border border-gray-100 absolute -bottom-24 -left-10 right-10 z-20">
+<div class="flex justify-between items-center mb-2">
+<span class="text-sm font-semibold text-brand-blue">Current Campaign</span>
+<div class="w-8 h-8 bg-brand-green rounded-full flex items-center justify-center text-white">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+</div>
+<p class="text-xs text-gray-500 mb-3">Help us build a new shelter in Nairobi.</p>
+<div class="w-full bg-gray-200 rounded-full h-2 mb-2 overflow-hidden">
+<div class="bg-gradient-to-r from-brand-green to-brand-accent h-2 rounded-full transition-all duration-1000 ease-out" style="width: 70%"></div>
+</div>
+<div class="flex justify-between text-xs font-semibold">
+<span class="text-gray-600">70%</span>
+<span class="text-brand-blue">$50,000 Goal</span>
+</div>
+</div>
+</div>
+</div>
+</section><!-- BEGIN: Mission Vision Values Section -->
+<section class="container mx-auto px-6 py-12 relative overflow-hidden">
+<!-- Background Accents -->
+<svg class="absolute -left-20 top-0 w-64 h-64 text-brand-accent opacity-10 pointer-events-none" fill="currentColor" viewbox="0 0 100 100">
+<circle cx="50" cy="50" r="50"></circle>
+</svg>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10 items-center">
+<!-- Text Content -->
+<div class="lg:col-span-7 flex flex-col gap-12">
+<!-- Mission -->
+<div class="relative">
+<div class="absolute -left-6 top-2 text-brand-green/20">
+<svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 2L2 22h20L12 2z"></path>
+</svg>
+</div>
+<h2 class="text-3xl font-bold text-brand-blue mb-4 relative inline-block z-10">
+            Our Mission
+            <svg class="absolute w-full h-3 -bottom-1 left-0 text-brand-accent" fill="none" preserveaspectratio="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" viewbox="0 0 100 10">
+<path d="M0 5 Q 50 10, 100 5"></path>
+</svg>
+</h2>
+<p class="text-gray-600 text-lg leading-relaxed z-10 relative">
+            To provide comprehensive care—encompassing education, protection, and healthcare—to vulnerable children, empowering them to overcome their disadvantaged backgrounds and lead self-sustaining, developmental lives.
+          </p>
+</div>
+<!-- Vision -->
+<div class="relative">
+<div class="absolute -left-6 top-2 text-brand-green/20">
+<svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+</svg>
+</div>
+<h2 class="text-3xl font-bold text-brand-blue mb-4 relative inline-block z-10">
+            Our Vision
+            <svg class="absolute w-full h-3 -bottom-1 left-0 text-brand-accent" fill="none" preserveaspectratio="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" viewbox="0 0 100 10">
+<path d="M2 8 Q 50 -2, 98 8"></path>
+</svg>
+</h2>
+<p class="text-gray-600 text-lg leading-relaxed z-10 relative">
+            We envision a world where every child and young person is empowered to be a responsible, active member of society, free from violence, disease, and poverty.
+          </p>
+</div>
+</div>
+<!-- Values Container -->
+<div class="lg:col-span-5 relative">
+<div class="bg-[#f2f5ec] rounded-[2rem] p-10 border border-white/50 shadow-sm relative z-10 backdrop-blur-sm">
+<!-- Decorative loop -->
+<svg class="absolute -top-6 -right-6 w-16 h-16 text-brand-accent opacity-80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 100 100">
+<path d="M80 20 C 20 20, 20 80, 50 80 C 80 80, 80 40, 50 40 C 30 40, 30 60, 50 60"></path>
+</svg>
+<h3 class="text-2xl font-bold text-brand-green mb-8">Our Core Values</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-4">
+<div class="flex items-center gap-3 group">
+<svg class="w-6 h-6 text-brand-green group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" viewBox="0 0 24 24">
+    <path d="M5 13l4 4L19 7" />
+</svg>
+<span class="text-brand-blue font-semibold text-lg">God Fearing</span>
+</div>
+<div class="flex items-center gap-3 group">
+<svg class="w-6 h-6 text-brand-green group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" viewBox="0 0 24 24">
+    <path d="M5 13l4 4L19 7" />
+</svg>
+<span class="text-brand-blue font-semibold text-lg">Integrity</span>
+</div>
+<div class="flex items-center gap-3 group">
+<svg class="w-6 h-6 text-brand-green group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" viewBox="0 0 24 24">
+    <path d="M5 13l4 4L19 7" />
+</svg>
+<span class="text-brand-blue font-semibold text-lg">Self-esteem</span>
+</div>
+<div class="flex items-center gap-3 group">
+<svg class="w-6 h-6 text-brand-green group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" viewBox="0 0 24 24">
+    <path d="M5 13l4 4L19 7" />
+</svg>
+<span class="text-brand-blue font-semibold text-lg">Accountability</span>
+</div>
+<div class="flex items-center gap-3 group">
+<svg class="w-6 h-6 text-brand-green group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" viewBox="0 0 24 24">
+    <path d="M5 13l4 4L19 7" />
+</svg>
+<span class="text-brand-blue font-semibold text-lg">Learning</span>
+</div>
+<div class="flex items-center gap-3 group">
+<svg class="w-6 h-6 text-brand-green group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" viewBox="0 0 24 24">
+    <path d="M5 13l4 4L19 7" />
+</svg>
+<span class="text-brand-blue font-semibold text-lg">Honesty</span>
+</div>
+</div>
+</div>
+<!-- Decorative background dot pattern behind values -->
+<div class="absolute top-1/2 -right-12 -translate-y-1/2 w-24 h-24 text-brand-green opacity-20 hidden lg:block z-0" style="background-image: radial-gradient(currentColor 2px, transparent 2px); background-size: 10px 10px;"></div>
+</div>
+</div>
+</section><section class="bg-surface-container-low py-24 relative overflow-hidden">
+<!-- Decorative organic flourish -->
+<svg class="absolute top-10 right-10 w-32 h-32 text-brand-green opacity-10 pointer-events-none" fill="currentColor" viewbox="0 0 100 100">
+<path d="M50 0 C 80 0, 100 20, 100 50 C 100 80, 50 100, 50 100 C 50 100, 0 80, 0 50 C 0 20, 20 0, 50 0 Z"></path>
+</svg>
+<div class="container mx-auto px-6 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<!-- Left Column: Content & Stats -->
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-bold text-brand-blue mb-6 relative inline-block">
+      About His Grace Orphans Ministry
+      <svg class="absolute w-full h-4 -bottom-2 left-0 text-brand-accent pointer-events-none" fill="none" preserveaspectratio="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" viewbox="0 0 100 10">
+<path d="M2 8 Q 50 -2, 98 8"></path>
+</svg>
+</h2>
+<p class="text-gray-600 text-lg leading-relaxed mt-8 mb-8">
+      We believe in providing education, protection, sustenance, medical care, emotional support, and spiritual guidance to orphans and poor children in our community and outlaying areas of Uganda.
+    </p>
+<div class="border-l-4 border-brand-accent pl-6 py-2 mb-12 italic text-brand-green font-medium">
+    "True religion is this: to look after orphans and widows in their distress."
+</div>
+<!-- Stats Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-6">
+<!-- Food Impact -->
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-white shadow-sm border border-gray-100">
+<div class="w-12 h-12 flex-shrink-0 bg-brand-green/10 rounded-xl flex items-center justify-center text-brand-green">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<div>
+<h3 class="font-bold text-brand-blue">Food</h3>
+<p class="text-sm text-gray-600"><span class="font-bold text-brand-green">38%</span> of kids younger than 5 experience nourishment hardship.</p>
+</div>
+</div>
+<!-- Clothing Impact -->
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-white shadow-sm border border-gray-100">
+<div class="w-12 h-12 flex-shrink-0 bg-brand-green/10 rounded-xl flex items-center justify-center text-brand-green">
+<span class="material-symbols-outlined">apparel</span>
+</div>
+<div>
+<h3 class="font-bold text-brand-blue">Clothing</h3>
+<p class="text-sm text-gray-600"><span class="font-bold text-brand-green">38%</span> of the populace is beneath the global destitution line of $1.25 each day.</p>
+</div>
+</div>
+<!-- Shelter Impact -->
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-white shadow-sm border border-gray-100">
+<div class="w-12 h-12 flex-shrink-0 bg-brand-green/10 rounded-xl flex items-center justify-center text-brand-green">
+<span class="material-symbols-outlined">home</span>
+</div>
+<div>
+<h3 class="font-bold text-brand-blue">Shelter</h3>
+<p class="text-sm text-gray-600"><span class="font-bold text-brand-green">2/3</span> live in unsatisfactory lodging with a typical pay of $65 every month.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Image & Flourish -->
+<div class="relative flex justify-center lg:justify-end">
+<div class="relative group">
+    <!-- Hand-drawn organic blob background frame -->
+    <svg class="absolute -inset-8 text-brand-accent/20 transition-transform group-hover:scale-110 duration-700" viewBox="0 0 200 200" fill="currentColor">
+        <path d="M45,-75.6C58.9,-69.1,70.7,-56.9,78.2,-42.6C85.7,-28.3,88.9,-12,87.6,3.9C86.3,19.8,80.5,35.3,71.1,48.2C61.7,61.1,48.7,71.4,34,77.5C19.3,83.6,2.9,85.5,-13.7,83C-30.3,80.5,-47.1,73.6,-60.1,62.2C-73.1,50.8,-82.3,34.9,-85.4,18.4C-88.5,1.9,-85.5,-15.1,-77.7,-30C-69.9,-44.9,-57.3,-57.7,-43.1,-64.1C-28.9,-70.5,-13,-70.5,1.3,-72.7C15.6,-74.9,31.1,-82.1,45,-75.6Z" transform="translate(100 100)" />
+    </svg>
+    <img alt="Children in Uganda" class="w-full max-w-lg aspect-[4/5] object-cover rounded-3xl shadow-2xl relative z-10" src="assets/images/IMG_20250401_100003_855@1382882099.jpg"/>
+</div>
+<!-- Small floatie stat overlap -->
+<div class="absolute -left-8 bottom-12 bg-white p-4 rounded-2xl shadow-xl z-20 hidden sm:block border border-gray-100">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 bg-brand-green rounded-full"></div>
+<span class="text-xs font-bold text-gray-500 uppercase tracking-widest">Impact in Uganda</span>
+</div>
+<p class="text-lg font-bold text-brand-blue mt-1">500+ Homes Built</p>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<!-- END: Mission Vision Values Section -->
+<!-- BEGIN: Who We Are Section -->
+<section class="container mx-auto px-6 py-20 relative">
+<!-- Decorative Swirl -->
+<svg class="absolute top-10 left-10 w-24 h-24 text-brand-accent opacity-30 z-0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 100 100">
+<path d="M10 50 Q 30 10, 50 50 T 90 50"></path>
+</svg>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start relative z-10">
+<!-- Left Column: Content -->
+<div class="flex flex-col gap-10">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4 relative inline-block">
+          Who We Are?
+          <svg class="absolute w-full h-3 -bottom-1 left-0 text-brand-accent pointer-events-none" fill="none" preserveaspectratio="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" viewbox="0 0 100 10">
+<path d="M2 8 Q 50 -2, 98 8"></path>
+</svg>
+</h2>
+<p class="text-gray-600 text-lg leading-relaxed mt-4">
+          By his stripes we are healed join us and we support our loving Children widows and Orphans are our concerns. Make your donation to this organization for the glory of God.
+        </p>
+</div>
+<div>
+<h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4 relative inline-block">
+          About Our Non-Profit
+        </h2>
+<p class="text-gray-600 text-lg leading-relaxed mt-4">
+          Every child– person deserves safety, comfort, food, clothes, and shelter. Our mission is to improve the quality of life of OVC through education, Psychosocial and spiritual support for a better tomorrow.
+        </p>
+</div>
+<!-- Accordions -->
+<div class="flex flex-col gap-4 mt-2">
+<details class="group bg-white rounded-2xl border border-gray-100 shadow-sm open:bg-surface-container-low transition-colors duration-200">
+<summary class="flex justify-between items-center font-bold text-brand-blue cursor-pointer list-none p-5">
+<span>How Can I Help?</span>
+<span class="transition group-open:rotate-180">
+<svg class="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</span>
+</summary>
+<div class="text-gray-600 p-5 pt-0 text-sm leading-relaxed">
+            You can help by volunteering your time, making a donation, or spreading the word about our mission. Every little bit counts and makes a significant impact on the lives of these children.
+          </div>
+</details>
+<details class="group bg-white rounded-2xl border border-gray-100 shadow-sm open:bg-surface-container-low transition-colors duration-200">
+<summary class="flex justify-between items-center font-bold text-brand-blue cursor-pointer list-none p-5">
+<span>Our Short History &amp; Story</span>
+<span class="transition group-open:rotate-180">
+<svg class="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</span>
+</summary>
+<div class="text-gray-600 p-5 pt-0 text-sm leading-relaxed">
+            Founded with a vision to eradicate poverty and provide a safe haven for the vulnerable, our ministry started as a small community effort. Over the years, by the grace of God and the support of our generous donors, we have grown to support thousands of children across various communities.
+          </div>
+</details>
+</div>
+</div>
+<!-- Right Column: Image -->
+<div class="relative lg:mt-10">
+<div class="absolute -inset-4 bg-brand-green/5 rounded-[3rem] -rotate-3 scale-105 pointer-events-none border border-brand-green/20 border-dashed"></div>
+<img alt="Articles of Incorporation" class="w-full h-auto object-cover rounded-3xl shadow-xl relative z-10 border-4 border-white" src="assets/images/Registration-Certificate-USA-1-pdf.jpg"/>
+<!-- Hand-drawn leaf doodle -->
+<svg class="absolute -top-10 -right-10 w-24 h-24 text-brand-green z-20 pointer-events-none opacity-80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M12 2C12 2 4 6 4 12C4 18 12 22 12 22C12 22 20 18 20 12C20 6 12 2 12 2Z"></path>
+<path d="M12 22V12"></path>
+</svg>
+</div>
+</div>
+</section>
+<!-- END: Who We Are Section -->
+<!-- END: HeroSection -->
+<!-- BEGIN: Stats Section -->
+<section class="container mx-auto px-6 py-24 relative overflow-hidden">
+<!-- Decorative Background Accent -->
+<div class="absolute -right-24 top-1/4 w-96 h-96 bg-brand-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+<!-- Image Column -->
+<div class="relative order-2 lg:order-1">
+<!-- Organic frame shape -->
+<div class="absolute -inset-6 bg-brand-green/5 blob-shape rotate-6 pointer-events-none border border-brand-green/10"></div>
+<img alt="Children around a water tank" class="w-full h-auto object-cover rounded-[3rem] shadow-2xl relative z-10 border-8 border-white" src="assets/images/water.jpg"/>
+<!-- Hand-drawn flourish -->
+<svg class="absolute -top-12 -left-12 w-32 h-32 text-brand-green opacity-40 z-0" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 100 100">
+<path d="M10,80 Q30,20 50,50 T90,20"></path>
+<circle cx="20" cy="20" fill="currentColor" opacity="0.2" r="5"></circle>
+</svg>
+</div>
+<!-- Content Column -->
+<div class="flex flex-col gap-8 order-1 lg:order-2">
+<div class="relative">
+<h2 class="text-4xl md:text-5xl font-bold text-brand-blue leading-tight mb-4">
+          Imagine If Your Child 
+          <span class="relative inline-block text-brand-green">
+            Didn’t Have
+            <!-- Hand-drawn squiggle -->
+<svg class="absolute w-full h-3 -bottom-1 left-0 text-brand-accent pointer-events-none" fill="none" preserveaspectratio="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" viewbox="0 0 100 10">
+<path d="M2 8 Q 50 -2, 98 8"></path>
+</svg>
+</span> 
+          Clean Water
+        </h2>
+</div>
+<div class="space-y-6 text-gray-600 text-lg leading-relaxed">
+<p class="font-medium text-brand-green">
+          Water is still a big problem for us we need a clean water source and need funds to dig a water well so that we can have clean water pray for us as we work in hand to set up a clear water source for our children and the community.
+        </p>
+<p>
+          While it’s tough to even fathom that people don’t have clean drinking water. It’s easy for us to pretend that this isn’t happening as we sit in our comfortable homes with water on demand. But it’s a reality for the people in Uganda.
+        </p>
+<p>
+          Every day they struggle with the very basic necessities that most of us take for granted. Poor water quality is a widespread problem, particularly in developing countries. A recent UN agency report indicated that almost one-third of people in developing countries do not have access to clean drinking water. It has been estimated that over 80 percent of diseases in these countries are related to poor water quality.
+        </p>
+<p class="font-semibold text-brand-blue border-l-4 border-brand-accent pl-6 italic">
+          Your small donation can help provide basic necessities to these poor, tired, and hungry individuals!
+        </p>
+</div>
+<div class="mt-4">
+<a class="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-greenHover text-white px-8 py-4 rounded-full font-bold transition-all shadow-xl hover:scale-105" href="#">
+          Support Clean Water
+          <span class="material-symbols-outlined">water_drop</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Bottom flourish -->
+<svg class="absolute bottom-0 right-10 w-48 h-48 text-brand-accent opacity-20 pointer-events-none" viewbox="0 0 200 200">
+<path d="M20,180 C20,20 180,20 180,110 C180,200 60,200 60,110 C60,60 160,60 160,110" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</section><!-- BEGIN: Transparency Section -->
+<section class="container mx-auto px-6 py-24 relative overflow-hidden">
+    <!-- Decorative background dot pattern -->
+    <div class="absolute top-0 left-10 w-32 h-32 text-brand-accent opacity-20 hidden lg:block z-0" style="background-image: radial-gradient(currentColor 2px, transparent 2px); background-size: 12px 12px;"></div>
+
+    <div class="flex flex-col items-center text-center mb-16 relative z-10">
+        <h2 class="text-4xl md:text-5xl font-bold text-brand-blue mb-4 relative inline-block">
+            Financial Integrity & Transparency
+            <svg class="absolute w-full h-3 -bottom-2 left-0 text-brand-accent pointer-events-none" fill="none" preserveaspectratio="none" stroke="currentColor" stroke-linecap="round" stroke-width="3" viewbox="0 0 100 10">
+                <path d="M2 8 Q 50 -2, 98 8"></path>
+            </svg>
+        </h2>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto mt-6">
+            We believe that every donor deserves to know exactly how their contribution is making a difference. We maintain a 100% transparency policy for all funds received.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10 bg-white/50 backdrop-blur-sm rounded-[3rem] p-8 md:p-16 border border-white shadow-xl">
+        <!-- Left: Donut Chart -->
+        <div class="flex justify-center relative">
+            <!-- Decorative Hand-drawn Arrow -->
+            <svg class="absolute -top-12 -right-12 w-24 h-24 text-brand-green opacity-40 hidden lg:block transform -rotate-12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 50 50">
+                <path d="M5,40 Q15,10 40,15" stroke-linecap="round"></path>
+                <path d="M32,12 L40,15 L35,22" stroke-linecap="round"></path>
+            </svg>
+
+            <svg class="w-64 h-64 md:w-80 md:h-80 transform -rotate-90" viewBox="0 0 100 100">
+                <!-- Background Circle -->
+                <circle cx="50" cy="50" r="40" fill="transparent" stroke="#f1f5f9" stroke-width="12" />
+                
+                <!-- Programs Segment (85%) -->
+                <circle cx="50" cy="50" r="40" fill="transparent" stroke="#1a5d4e" stroke-width="12" 
+                    stroke-dasharray="251.2" 
+                    style="stroke-dashoffset: calc(251.2 * 0.15);" 
+                    class="transition-all duration-1000 ease-out" />
+                
+                <!-- Admin Segment (10%) -->
+                <circle cx="50" cy="50" r="40" fill="transparent" stroke="#0a192f" stroke-width="12" 
+                    stroke-dasharray="251.2" 
+                    style="stroke-dashoffset: calc(251.2 * 0.90); transform: rotate(306deg); transform-origin: center;" 
+                    class="transition-all duration-1000 ease-out" />
+                
+                <!-- Fundraising Segment (5%) -->
+                <circle cx="50" cy="50" r="40" fill="transparent" stroke="#d4ed6d" stroke-width="12" 
+                    stroke-dasharray="251.2" 
+                    style="stroke-dashoffset: calc(251.2 * 0.95); transform: rotate(342deg); transform-origin: center;" 
+                    class="transition-all duration-1000 ease-out" />
+                
+                <!-- Center Text -->
+                <g transform="rotate(90 50 50)">
+                    <text x="50" y="48" text-anchor="middle" class="font-bold text-[8px] fill-brand-blue uppercase tracking-widest">Impact</text>
+                    <text x="50" y="62" text-anchor="middle" class="font-bold text-[14px] fill-brand-green">100%</text>
+                </g>
+            </svg>
+            
+            <!-- Hand-drawn sparkle burst in center -->
+            <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 text-brand-accent opacity-20 pointer-events-none" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 100 100">
+                <path d="M50,20 L50,30 M80,50 L70,50 M50,80 L50,70 M20,50 L30,50 M71,29 L64,36 M71,71 L64,64 M29,71 L36,64 M29,29 L36,36"></path>
+            </svg>
+        </div>
+
+        <!-- Right: Details -->
+        <div class="flex flex-col gap-6">
+            <h3 class="text-2xl font-bold text-brand-blue mb-2 relative inline-block w-fit">
+                Fund Allocation Breakdown
+                <!-- Small underline scribble -->
+                <svg class="absolute -bottom-1 left-0 w-full h-2 text-brand-accent/60" viewBox="0 0 100 10" preserveAspectRatio="none">
+                    <path d="M0,5 Q50,0 100,5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </h3>
+            
+            <div class="space-y-6">
+                <!-- Programs -->
+                <div class="flex items-start gap-4 group">
+                    <div class="w-4 h-4 rounded-full bg-brand-green mt-1.5 flex-shrink-0 shadow-[0_0_10px_rgba(26,93,78,0.3)]"></div>
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-center mb-1">
+                            <h4 class="font-bold text-brand-blue text-lg">Direct Child Programs</h4>
+                            <div class="relative">
+                                <span class="text-brand-green font-bold text-xl">85%</span>
+                                <!-- Hand-drawn circle around 85% -->
+                                <svg class="absolute -inset-2 w-12 h-12 text-brand-green opacity-30 pointer-events-none" viewBox="0 0 50 50">
+                                    <path d="M25,5 C40,5 45,20 45,25 C45,40 30,45 25,45 C10,45 5,30 5,25 C5,10 20,5 25,5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Covers tuition, school materials, daily meals, medical checkups, and housing for our orphans.</p>
+                    </div>
+                </div>
+
+                <!-- Administration -->
+                <div class="flex items-start gap-4 group">
+                    <div class="w-4 h-4 rounded-full bg-brand-blue mt-1.5 flex-shrink-0"></div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h4 class="font-bold text-brand-blue text-lg">Essential Administration</h4>
+                            <span class="text-brand-blue font-bold">10%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Staffing, logistical support, and ensuring safe transport for children and resources.</p>
+                    </div>
+                </div>
+
+                <!-- Fundraising -->
+                <div class="flex items-start gap-4 group">
+                    <div class="w-4 h-4 rounded-full bg-brand-accent mt-1.5 flex-shrink-0"></div>
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <h4 class="font-bold text-brand-blue text-lg">Growth & Fundraising</h4>
+                            <span class="text-brand-accent font-bold">5%</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed">Events and outreach programs to expand our community of supporters.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-gray-100 flex flex-wrap gap-6 items-center">
+                <a href="#" class="flex items-center gap-2 text-brand-green font-bold hover:text-brand-greenHover transition-colors group text-sm">
+                    <span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform">download</span>
+                    2023 Audit Report
+                </a>
+                <a href="#" class="flex items-center gap-2 text-brand-green font-bold hover:text-brand-greenHover transition-colors group text-sm">
+                    <span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform">description</span>
+                    Annual Impact Study
+                </a>
+                <!-- Founder's Signature / Certified Stamp -->
+                <div class="ml-auto relative group">
+                    <svg class="w-24 h-24 text-brand-accent/40 absolute -inset-2 transform group-hover:rotate-12 transition-transform duration-500" viewBox="0 0 100 100" fill="currentColor">
+                        <path d="M50,10 C72,10 90,28 90,50 C90,72 72,90 50,90 C28,90 10,72 10,50 C10,28 28,10 50,10 M50,15 C31,15 15,31 15,50 C15,69 31,85 50,85 C69,85 85,69 85,50 C85,31 69,15 50,15" />
+                    </svg>
+                    <div class="relative z-10 text-center px-2 py-4">
+                        <p class="text-[8px] font-bold text-brand-blue uppercase tracking-widest mb-0.5">Verified</p>
+                        <p class="font-serif italic text-brand-green text-sm leading-none">His Grace</p>
+                        <p class="text-[6px] text-gray-500 mt-1">Impact First</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END: Transparency Section -->
+<!-- BEGIN: Pre-Footer CTA -->
+<section class="bg-brand-green py-20 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+        <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0,50 Q25,0 50,50 T100,50" fill="none" stroke="white" stroke-width="0.5" />
+            <path d="M0,70 Q25,20 50,70 T100,70" fill="none" stroke="white" stroke-width="0.5" />
+        </svg>
+    </div>
+    <div class="container mx-auto px-6 text-center relative z-10">
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-8">A child's future starts with your decision today.</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#" class="bg-brand-accent text-brand-green hover:bg-white px-10 py-4 rounded-full font-bold transition-all shadow-xl hover:scale-105">Partner With Us</a>
+            <a href="#" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-brand-green px-10 py-4 rounded-full font-bold transition-all">Make a Donation</a>
+        </div>
+    </div>
+</section>
+<!-- END: Pre-Footer CTA -->
+
+<!-- BEGIN: Footer -->
+<footer class="bg-brand-blue text-white pt-20 pb-10 relative overflow-hidden">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <!-- Brand Column -->
+            <div class="flex flex-col gap-6">
+                <img alt="His Grace Orphanage Ministry Logo" class="h-16 w-auto object-contain self-start" src="assets/images/cropped-HIS-GRACE-Log-PNG-1.pngj_-1-270x270.png"/>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Dedicated to providing hope, education, and holistic care to vulnerable children in Uganda. Together, we can build a brighter future.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-green transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand-green transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="flex flex-col gap-6">
+                <h4 class="font-bold text-lg border-l-4 border-brand-accent pl-4">Quick Links</h4>
+                <nav class="flex flex-col gap-3 text-gray-400 text-sm">
+                    <a href="#" class="hover:text-brand-accent transition-colors">Home</a>
+                    <a href="#" class="hover:text-brand-accent transition-colors">About Us</a>
+                    <a href="#" class="hover:text-brand-accent transition-colors">Our Work</a>
+                    <a href="#" class="hover:text-brand-accent transition-colors">Events</a>
+                    <a href="#" class="hover:text-brand-accent transition-colors">Blog</a>
+                </nav>
+            </div>
+
+            <!-- Get Involved -->
+            <div class="flex flex-col gap-6">
+                <h4 class="font-bold text-lg border-l-4 border-brand-accent pl-4">Get Involved</h4>
+                <nav class="flex flex-col gap-3 text-gray-400 text-sm">
+                    <a href="#" class="hover:text-brand-accent transition-colors">Make a Donation</a>
+                    <a href="#" class="hover:text-brand-accent transition-colors">Volunteer</a>
+                    <a href="#" class="hover:text-brand-accent transition-colors">Partner With Us</a>
+                    <a href="#" class="hover:text-brand-accent transition-colors">Prayer Support</a>
+                </nav>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="flex flex-col gap-6">
+                <h4 class="font-bold text-lg border-l-4 border-brand-accent pl-4">Contact Us</h4>
+                <div class="flex flex-col gap-4 text-gray-400 text-sm">
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-brand-accent">location_on</span>
+                        <span>Kampala, Uganda</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-brand-accent">mail</span>
+                        <span>info@hisgraceuganda.org</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-brand-accent">call</span>
+                        <span>+256 123 456 789</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 uppercase tracking-widest">
+            <p>© 2026 His Grace Orphanage Ministry. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END: Footer -->
+
+<script>
+    // Simple Scroll Reveal Animation
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+        observer.observe(section);
+    });
+
+    // Immediate show for hero
+    const hero = document.querySelector('section');
+    if (hero) {
+        hero.classList.remove('opacity-0', 'translate-y-10');
+        hero.classList.add('opacity-100', 'translate-y-0');
+    }
+
+    // Parallax Scroll Effect
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const parallaxElements = document.querySelectorAll('.parallax-element');
+        
+        parallaxElements.forEach(el => {
+            const speed = el.getAttribute('data-speed') || 0.2;
+            const yPos = (scrolled * speed);
+            // Using transform: translateY to move elements down slightly as user scrolls down
+            // or up depending on the speed sign. Positive speed moves with scroll but slower.
+            el.style.transform = `translateY(${yPos}px)`;
+        });
+    });
+</script>
+</body></html>
